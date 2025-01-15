@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --primary:#288645;
+    --third: #72E1D1;
+    --secondary: #94DDCF;
+    --bg-color:rgba(182, 223, 195, 0.541);
+}
+
+
+body {
+    background-color: var(--bg-color);
+    font-size: 1rem;
+    line-height: 1.5;
+ }
+
+ h1 {
+    font-size: 36px;
+}
+.top {
+    background-color: var(--third);
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+}
