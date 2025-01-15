@@ -10,7 +10,7 @@
     --primary:#288645;
     --third: #72E1D1;
     --secondary: #94DDCF;
-    --bg-color:rgba(182, 223, 195, 0.541);
+    --bg-color:#A8D08D;
 }
 
 
@@ -24,30 +24,115 @@ body {
     font-size: 36px;
 }
 .top {
-    background-color: var(--third);
     width: 100%;
-    height: 60px;
-    font-size: 40px;
+    height: 5;
     text-align: center;
+    background: linear-gradient(135deg, #00ff6e, #6b8f3fc9, #125a2b8f, #5f9ea0);
+    background-size: 400% 400%; 
+    animation: flow 6s ease infinite;
 }
 
+@keyframes flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .logo {
-    padding: 0 0vw;
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #288645;
+    /* color: #288645; */
+    color: rgb(232, 224, 224);
+    font-family: 'Sofia', sans-serif;
+    letter-spacing: 2rem;
   }
   
 .nav-bar {
-    background-color:rgba(4, 4, 4, 0.09) ;
+    background-color: #916e6e23;
     width: 100%;
+    border-bottom: 2px solid rgba(244, 238, 238, 0.65);
     height: 60px;
-    font-size: 30px;
+    /* font-size: 20%; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    /* gap: 7rem; */
+    padding: 0 32px;
 } 
 
-.nav-bar ul {
-  display: flex;
-  justify-content: space-evenly;
-
+.left-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+.left-nav a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #288645; /* Match the original color */
+    text-transform: uppercase;
+    text-decoration: none; 
+    display: block; 
+    padding: 7px 7px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 5px;
+}
+.right-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+ .nav-bar  li {
+    font-size: 16px;   
+    font-weight: 600;       
+    color: #288645; 
+    text-transform: uppercase;    
+    cursor: pointer;
+    align-items: center;      
+    padding: 7px 7px;
+    transition: all 0.3s ease;    
+    text-align: center;          
+    border-radius: 5px;  
+    margin: 0 1.5vw;
+}
+
+ul li:hover {
+    background-color: #288645;  
+    color: white;                
+    transform: translateY(-5px);  
+  }
+  ul li.active {
+    background-color: #006400;  
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  .left-nav a:hover {
+    color: white;
+  }
+  
+  /* Animation for menu items when they appear */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  ul li {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .right-nav li{
+    float: right;
+  }
+  
