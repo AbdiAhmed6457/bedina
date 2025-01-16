@@ -156,7 +156,7 @@ ul li:hover {
       /* align-items: center; */
       background-color: #52929244;
       justify-content: center;
-      gap: 2rem;
+      gap: 4rem;
       position: relative;
       shape-outside: circle(50%);
 
@@ -187,10 +187,10 @@ ul li:hover {
   }
   .hero-pic {
     /* width: 45%; */
-    width: 200px; 
-    height: 200px;
+    width: 250px; 
+    height: 250px;
     margin-right: 2rem;
-    margin-top:4rem ;
+    margin-top:3rem ;
 
     /* background-color: #00ff6e; */
 
@@ -207,7 +207,7 @@ ul li:hover {
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.5s ease;
-    animation: rotate-circle 15s linear infinite;
+    animation: rotate-circle 25s linear infinite;
 }
 
 @keyframes rotate-circle {
