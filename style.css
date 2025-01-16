@@ -217,6 +217,11 @@ ul li:hover {
     100% {
       transform: scaleX(-1) rotate(360deg); 
   } 
+
+}
+.hero-picture:hover {
+     animation: none;
+   
 }
 .actions {
     position: absolute;
