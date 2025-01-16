@@ -144,52 +144,72 @@ ul li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-   
   }
  
   .welcome {
-    margin-top: 96px;
-    display: flex;
-    height: 80%;
-    width: 100%;
-    color: white;
-    justify-content: space-between;
-    /* align-items: center; */
-    background-color: #52929244;
-    padding: 2rem;
+      /* margin-top: 32px; */
+      display: inline-flex;
+      height: 80%;
+      width: 100%;
+      color: white;
+      /* justify-content: space-between; */
+      /* align-items: center; */
+      background-color: #52929244;
+      justify-content: center;
+      gap: 2rem;
+      position: relative;
+      shape-outside: circle(50%);
+
  
   }
 
   .welcome-text {
     /* background-color:blue; */
+    margin-top: 2rem;
     width: 45%;
     height: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 5s forwards; 
+  
   }
+ 
   .welcome-text h1 {
     line-height: 1.1;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem; 
   }
-/* .hero-pic {
-    width: 45%;
-    background-color: #00ff6e;
-} */
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .hero-pic {
+    /* width: 45%; */
+    width: 200px; 
+    height: 200px;
+    margin-right: 2rem;
+    margin-top:4rem ;
+
+    /* background-color: #00ff6e; */
+
+  }
+ 
+
 .hero-picture {
-    width: 400px;
+    /* width: 400px;
     height: 400px;
     padding-left: 2rem;
-    border-radius: 100%;
+    border-radius: 100%; */
+        width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
     transition: transform 0.5s ease;
     animation: rotate-circle 15s linear infinite;
 }
-.hero-pic {
-    width: 45%;
-    /* background-color: #00ff6e; */
-    filter: blur(2px);
-     transition: filter 0.3s ease-in-out;
-  }
-  .hero-pic:hover {
-    filter: blur(0);
-  }
+
 @keyframes rotate-circle {
     0% {
       transform: scaleX(-1) rotate(0deg);
@@ -198,3 +218,31 @@ ul li:hover {
       transform: scaleX(-1) rotate(360deg); 
   } 
 }
+.actions {
+    position: absolute;
+    top: 20rem;
+    left: 45vw;
+}
+.cta-button {
+    background-color: #11612c;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 20px ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .cta-button:hover {
+    background-color: #51810d;
+    color: white;
+  }
+ .button-2 {
+    background-color: #a9c8a9;
+    color: green;
+    margin-left: 20px;
+  }
+  
