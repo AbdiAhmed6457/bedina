@@ -344,7 +344,8 @@ ul li:hover {
     border-radius: 10px;
     padding: 2px;
     display: none;
-    background-color: #007bff88;
+    /* background-color: #007bff88; */
+    background-color: #00ff95b7;
   }
 
   .detail:target {
@@ -354,6 +355,10 @@ ul li:hover {
   .discover-container:has(.detail:target) .discover {
     display: none; 
 }
+
+.detail2 p {
+    padding-bottom: 10px;
+}
   
 .culture-sub-cont {
 
@@ -361,10 +366,17 @@ ul li:hover {
     height: auto;
     background-color: rgba(216, 216, 79, 0.256);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 34px;
     padding: 20px;
 
+}
+
+.culture-pictures {
+    background-color: rgba(41, 219, 29, 0.601); /* Optional: Adds contrast */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
 }
 
 .culture-sub-cont img {
@@ -374,9 +386,11 @@ ul li:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease;
 }
+ 
+
 
 .culture-sub-cont img:hover {
-    transform: scale(1.15) translateY(20px); 
+    transform: scale(1.05) translateY(1px); 
   }
 
   .close {
