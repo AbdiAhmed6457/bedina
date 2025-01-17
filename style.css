@@ -341,7 +341,7 @@ ul li:hover {
 
   .detail {
     text-align: center;
-    border: 1px solid #26730540;
+    border: 1px solid #b6d4a98c;
     border-radius: 10px;
     padding: 2px;
     display: none;
@@ -368,7 +368,7 @@ ul li:hover {
 
     width: 100%;
     height: auto;
-    background-color: rgba(107, 107, 26, 0.245);
+    background-color: rgba(107, 107, 26, 0.459);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 34px;
@@ -408,4 +408,62 @@ ul li:hover {
   
   .close:hover {
     color:blue;
+  }
+                      
+                         /*LIVELIHOOD SECTION*/
+
+  .livelihood-sub-container {
+    background-color: #e50e7d;
+    /* background-image: url("images/trial/live-bg.jpg"); */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+  }
+
+  .livelihood-sub-cont input[type= "radio"]{
+                display: none;
+  }
+
+  .livelihood-sub-cont {
+    width: 100%;
+    height: 90%;
+    background-color: rgba(203, 203, 39, 0);
+  }
+
+  .slides {
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+    align-items: center;
+  } 
+
+    #slide1:checked ~ .slides:nth-child(4),
+    #slide2:checked ~ .slides:nth-child(5),
+    #slide3:checked ~ .slides:nth-child(6) {
+    left: 0; 
+    opacity: 1; 
+}
+
+   /* .slides p {
+    width: 40%;
+  } */
+
+  .slides img {
+    width: 40%; 
+    height: 300px;
+  }    
+  
+  .livelihood-back {
+    position: absolute;
+    left: 45%;
+    bottom: 3rem;
   }
