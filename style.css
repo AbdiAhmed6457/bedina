@@ -419,7 +419,6 @@ ul li:hover {
     border-radius: 10px;
     height: 100vh;
     position: relative;
-
   }
 
   .livelihood-sub-cont input[type= "radio"]{
@@ -428,7 +427,7 @@ ul li:hover {
 
   .livelihood-sub-cont {
     width: 100%;
-    height: 100vh;
+    height: 89%;
     background-color: rgba(26, 89, 64, 0.238);
     /* margin-top: -60px; */
     border: 1px solid #5e463768;
@@ -436,42 +435,19 @@ ul li:hover {
     /* padding-top: 16px; */
     margin-top: 8px;
     position: relative;
+
   }
-
-  .livelihood-sub-cont h3 {
-    padding-top: 10px;
-    line-height: 1;
+.live-topic {
     position: absolute;
-    top: 30px;
-    left: 35%;
-    /* opacity: 0;  Make them invisible */
-    transition: left 0.5s ease, opacity 0.5s ease;
- }
- #slide1:checked ~ .livelihood-sub-cont .slides:nth-of-type(1) {
-    left: 35%;
-    opacity: 1;
+    top:3rem ;
 }
-
-/* Show the second slide when #slide2 is checked */
-#slide2:checked ~ .livelihood-sub-cont .slides:nth-of-type(2) {
-    left: 0;
-    opacity: 1;
-}
-
-/* Show the third slide when #slide3 is checked */
-#slide3:checked ~ .livelihood-sub-cont .slides:nth-of-type(3) {
-    left: 0;
-    opacity: 1;
-}
-
 
   .slides {
-    margin-top: -3rem;
     position: absolute;
     top: 10px;
     left: 100%;
     width: 100%;
-    height: 100%;
+    height: 98%;
     opacity: 0;
     display: flex;
     flex-direction: row;
@@ -480,13 +456,16 @@ ul li:hover {
     align-items: center;
     overflow: hidden;
   } 
-    #slide1:checked ~ .slides:nth-child(7),
-    #slide2:checked ~ .slides:nth-child(8),
-    #slide3:checked ~ .slides:nth-child(9) {
+    #slide1:checked ~ .slides:nth-child(4),
+    #slide2:checked ~ .slides:nth-child(5),
+    #slide3:checked ~ .slides:nth-child(6) {
     left: 0; 
     opacity: 1; 
 }
- 
+ .livelihood-sub-cont h3 {
+    padding-top: 10px;
+    line-height: 1;
+ }
 
    .slides p {
     width: 50%;
@@ -496,7 +475,7 @@ ul li:hover {
     white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    animation: fadeIn 1s ease-in forwards;
+    animation: fadeIn 2s ease-in forwards;
     animation-delay:0s ;
   }
 
@@ -533,10 +512,35 @@ ul li:hover {
   }
 
   .prev,
-.next {
+  .next {
       padding: 0 10px;
       font-size: 2rem;
       background: rgba(0, 0, 0, 0.283);
       border-radius: 15px;
       transition: all 0.5s ease;
-    }
+      margin: 0 16px;
+      cursor: pointer; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Hover effect */
+  .prev:hover,
+  .next:hover {
+      background: rgba(0, 0, 0, 0.5); /* Darkens the background when hovered */
+      transform: scale(1.1); /* Slightly increases the size when hovered */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+  }
+  
+  /* Active state effect */
+  .prev:active,
+  .next:active {
+      background: rgba(0, 0, 0, 0.7); /* Darker background when clicked */
+      transform: scale(0.95); /* Slightly reduces the size when clicked */
+  }
+  
+  /* Optional: Add focus styles for better accessibility */
+  .prev:focus,
+  .next:focus {
+      outline: 2px solid #0e79e5; /* Adds a focus outline when the button is focused */
+      outline-offset: 2px;
+  }
