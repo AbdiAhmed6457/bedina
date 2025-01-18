@@ -413,10 +413,10 @@ ul li:hover {
                          /*LIVELIHOOD SECTION*/
 
   .livelihood-sub-container {
-    background-color: #e50e7d;
-    /* background-image: url("images/trial/live-bg.jpg"); */
+    background-image: url("images/trial/live-bg4.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
     height: 100vh;
     position: relative;
 
@@ -428,11 +428,45 @@ ul li:hover {
 
   .livelihood-sub-cont {
     width: 100%;
-    height: 90%;
-    background-color: rgba(203, 203, 39, 0);
+    height: 100vh;
+    background-color: rgba(26, 89, 64, 0.238);
+    /* margin-top: -60px; */
+    border: 1px solid #5e463768;
+    border-radius: 10px;
+    /* padding-top: 16px; */
+    margin-top: 8px;
+    position: relative;
   }
 
+  .livelihood-sub-cont h3 {
+    padding-top: 10px;
+    line-height: 1;
+    position: absolute;
+    top: 30px;
+    left: 35%;
+    /* opacity: 0;  Make them invisible */
+    transition: left 0.5s ease, opacity 0.5s ease;
+ }
+ #slide1:checked ~ .livelihood-sub-cont .slides:nth-of-type(1) {
+    left: 35%;
+    opacity: 1;
+}
+
+/* Show the second slide when #slide2 is checked */
+#slide2:checked ~ .livelihood-sub-cont .slides:nth-of-type(2) {
+    left: 0;
+    opacity: 1;
+}
+
+/* Show the third slide when #slide3 is checked */
+#slide3:checked ~ .livelihood-sub-cont .slides:nth-of-type(3) {
+    left: 0;
+    opacity: 1;
+}
+
+
   .slides {
+    margin-top: -3rem;
     position: absolute;
     top: 10px;
     left: 100%;
@@ -444,22 +478,52 @@ ul li:hover {
     justify-content: space-evenly;
     gap: 3rem;
     align-items: center;
+    overflow: hidden;
   } 
-
-    #slide1:checked ~ .slides:nth-child(4),
-    #slide2:checked ~ .slides:nth-child(5),
-    #slide3:checked ~ .slides:nth-child(6) {
+    #slide1:checked ~ .slides:nth-child(7),
+    #slide2:checked ~ .slides:nth-child(8),
+    #slide3:checked ~ .slides:nth-child(9) {
     left: 0; 
     opacity: 1; 
 }
+ 
 
-   /* .slides p {
-    width: 40%;
-  } */
+   .slides p {
+    width: 50%;
+    height: 40%;
+    /* background-color: green; */
+    align-self: center;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay:0s ;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
 
   .slides img {
+    background-color: #0e79e5;
     width: 40%; 
-    height: 300px;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(85, 82, 82, 0.472);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin: 10px 0;
+
+  }
+
+  .slides img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect when hovered */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow when hovered */
   }    
   
   .livelihood-back {
@@ -467,3 +531,12 @@ ul li:hover {
     left: 45%;
     bottom: 3rem;
   }
+
+  .prev,
+.next {
+      padding: 0 10px;
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.283);
+      border-radius: 15px;
+      transition: all 0.5s ease;
+    }
