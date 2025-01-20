@@ -829,6 +829,9 @@ padding: 2rem;
     background-color: #eff3f0;
 
 }
+.accordion-label {
+    font-size: larger;
+}
 
 #family1:checked ~ .content-1 {
     max-height: 900px; 
@@ -841,7 +844,15 @@ padding: 2rem;
 }
 
 #family3:checked ~ .content-3 {
-    max-height: 200px;
+    max-height: 600px;
+    padding: 1rem;
+}
+#family4:checked ~ .content-4 {
+    max-height: 600px;
+    padding: 1rem;
+}
+#family5:checked ~ .content-5 {
+    max-height: 600px;
     padding: 1rem;
 }
 
