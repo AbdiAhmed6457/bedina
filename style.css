@@ -831,12 +831,12 @@ padding: 2rem;
 }
 
 #family1:checked ~ .content-1 {
-    max-height: 800px; 
+    max-height: 900px; 
     padding: 1rem;
 }
 
 #family2:checked ~ .content-2 {
-    max-height: 200px;
+    max-height: 700px;
     padding: 1rem;
 }
 
@@ -846,10 +846,11 @@ padding: 2rem;
 }
 
 table {
-    width: 100%;
+    width: 98%;
     border-collapse: collapse;
     margin: 20px 0;
     font-family: Arial, sans-serif;
+    justify-self: center;
 }
 
 th, td {
