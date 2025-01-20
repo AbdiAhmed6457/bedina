@@ -279,7 +279,6 @@ ul li:hover {
     animation: gradientAnimation 25s ease infinite;
     padding-bottom: 26px;
     color: white;
-    
   }
 
   @keyframes gradientAnimation {
@@ -308,6 +307,7 @@ ul li:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-bottom: 3rem;
    }
 
   .card-container {
@@ -372,7 +372,7 @@ ul li:hover {
     padding: 2px;
     display: none;
     /* background-color: #007bff88; */
-    background-image: url(images/trials/detail-bg.jpg);
+    background-image: url(images/livelihood-pics/detail-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -439,7 +439,7 @@ ul li:hover {
                          /*LIVELIHOOD SECTION*/
 
   .livelihood-sub-container {
-    background-image: url("images/trial/live-bg4.jpg");
+    background-image: url("images/livelihood-pic/live-bg4.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -581,7 +581,7 @@ ul li:hover {
     padding: 1rem;
     display: none;
     background-color: #3f6d9c88;
-    background-image: url(images/trial/live-bg.jpg);
+    background-image: url(images/livelihood-pic/live-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -671,6 +671,90 @@ hr {
       
               /* FAMILY PAGE */
 
+ .families {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+ }           
 .families-container {
-    background-image: url("images/");
+    height: 100%;
+    background-image: url("images/families-imgs/family8.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+
+.family-header {
+    height: 100%;
+    color: rgb(240, 247, 240);
+    text-align: center;
+    background-color: rgba(6, 106, 20, 0.449); 
+}
+.family-header h2 {
+   padding-top: 2rem;
+}
+
+.about-family {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 25%));
+  align-items: start;
+  gap: 3rem;
+  justify-content: center;
+  
+padding: 2rem;
+}
+
+.fam-info {
+    border: 2px solid rgba(255, 255, 255, 0.194);
+    background-color: #0e9b04a9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.918); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.fam-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.603); 
+}
+.fam-info h4 {
+    padding: 5px;
+    text-decoration: underline rgba(246, 244, 244, 0.886) 1px;
+}
+
+.big-families-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9; 
+}
+
+.content-aside-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%; 
+    padding: 2rem; 
+    background-color: #11a506ab;
+}
+
+.aside-fam {
+    flex: 1; /* Takes up minimal space */
+    max-width: 250px; 
+    background-color: #e9f7e9;
+    padding: 1rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.big-fam-content {
+    flex: 3; /* Takes up the remaining space */
+    background-color: #ffffff; 
+    padding: 1.5rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.big-fam-content p {
+  padding: 10px 0;
+  
 }
