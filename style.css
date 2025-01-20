@@ -705,6 +705,7 @@ padding: 2rem;
 }
 
 .fam-info {
+    text-align: left;
     border: 2px solid rgba(255, 255, 255, 0.194);
     border-radius: 14px;
     background-color: #0e9b04a9;
@@ -717,7 +718,9 @@ padding: 2rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.603); 
 }
 .fam-info h4 {
+      
     padding: 5px;
+    padding-left: 3rem;
     text-decoration: underline rgba(246, 244, 244, 0.886) 1px;
 }
 
@@ -854,6 +857,9 @@ padding: 2rem;
 #family5:checked ~ .content-5 {
     max-height: 600px;
     padding: 1rem;
+}
+.hikam, .husen {
+   width: 70%; 
 }
 
 table {
