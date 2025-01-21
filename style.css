@@ -989,7 +989,7 @@ td[rowspan] {
 }
 
 .contact-container {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     gap: 6rem;
@@ -1000,26 +1000,50 @@ td[rowspan] {
     padding-bottom: 2rem;
 }
 .left-contact {
+    box-sizing: border-box;
     background-color: yellow;
     width: 50%;
-    height: 20rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 
+}
+
+.left-contact label {
+    font-size: 20px;
+    font-weight: 600;
+}
+.left-contact input {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .name-form-cont {
     display: flex;
-    
+    gap: 1rem;
 }
 .name-form {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 .email-input {
     display: block;
 }
+
+.sub-info {
+    display: block;
+    padding: 1rem;
+    width: 70%;
+    background-color: #006400;
+    justify-self: center;
+}
 .the-map {
     background-color: green;
-    width: 50%;
+    
 }
 iframe {
    height: 80%;
