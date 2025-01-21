@@ -978,4 +978,24 @@ td[rowspan] {
 .contact {
     height: 50vh;
     background-color: #0e79e570;
+    color: white;
+
 }
+.contact h3 {
+    text-align: center;
+    font-size: 2rem ;
+    
+}
+
+.name-form-cont {
+    display: flex;
+    
+}
+.name-form {
+    display: flex;
+    flex-direction: column;
+}
+.email-input {
+    display: block;
+}
+
