@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
 
     <title>BEDINA</title>
 </head>
@@ -671,16 +672,22 @@
                     </div>
                 </div>
                    
-                <div class="fam-numbers">
-                    
+                <div class="fam-end">
+                    <div class="fam-conclusion">
+                        Each member of the Bedina family plays an important role in shaping the village, adding to its warmth and sense of community. I pray that God continues to bless Bedina, its residents, and their efforts, making it a shining example for its neighbors. May the village always remain a place of peace and growth, and may good people from its family continue to bring prosperity and harmony
+                    </div>
                 </div>
                 
 
              </div>
        </div>
 
-       <div id="about-page" class="about">
+       <div id="about-page" class="team-container">
           <div class="the-team">
+
+            <div class="provisions">
+
+            </div>
               
           </div>
        </div>
@@ -689,13 +696,10 @@
 </body>
 
 <script>
-    // Select the navbar
     const navbar = document.querySelector('.nav-bar');
 
-    // Get the navbar's offset position
     const stickyOffset = navbar.offsetTop;
 
-    // Add scroll event listener
     window.addEventListener('scroll', () => {
       if (window.scrollY >= stickyOffset + 120) {
         navbar.classList.add('sticky'); 

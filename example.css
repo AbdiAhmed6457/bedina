@@ -1,15 +1,62 @@
-.about-family {
+body {
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Correct alignment to top */
-  gap: 2rem;
-  background-color: red;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
+.counter {
+  text-align: center;
+  margin: 0 20px;
+}
 
-.about-family p {
-  width: 30%; /* Keeps the width consistent */
-  background-color: #139f1344;
-  margin: 0; /* Removes default margin */
-  padding: 0.5rem; /* Optional: Add padding for spacing within paragraphs */
+.count {
+  font-size: 3rem;
+  font-weight: bold;
+  overflow: hidden;
+  height: 1em; /* Matches the font size */
+  display: inline-block;
+  position: relative;
+  width: 1em; /* To center the digits properly */
+}
+
+.count span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(100%); /* Start below the visible area */
+}
+
+.homes span {
+  animation: count-animation-homes 5s steps(10) forwards;
+}
+
+.people span {
+  animation: count-animation-people 7s steps(10) forwards;
+}
+
+/* Keyframes for the Homes Counter */
+@keyframes count-animation-homes {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-900%); /* Moves up to show the 9th digit */
+  }
+}
+
+/* Keyframes for the People Counter */
+@keyframes count-animation-people {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-900%); /* Moves up to show the 9th digit */
+  }
 }
