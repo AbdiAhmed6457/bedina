@@ -833,7 +833,7 @@ padding: 2rem;
 
 }
 .accordion-label {
-    font-size: larger;
+    font-size: 1.3rem;
 }
 
 #family1:checked ~ .content-1 {
@@ -899,4 +899,11 @@ td[rowspan] {
 
 .grandchildren-column {
     padding-left: 2rem;
+}
+
+.material-symbols-outlined {
+   margin-top: 1px;
+   font-size: 1.8rem;
+   vertical-align: middle;
+   display: inline-block;
 }
