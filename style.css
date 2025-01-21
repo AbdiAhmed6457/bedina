@@ -928,5 +928,54 @@ td[rowspan] {
 }
 
 .team-container {
-    height: 100vh;
+    height: auto;
+    background-image: url("images/about-imgs/about-bg6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.provisions {
+    background-color: #0e79e53b;
+
+}
+
+.bedina-services {
+    color: white;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 70%;
+    padding: 2rem;
+    padding-left: 4rem;
+}
+
+.service-lists {
+    background-color: #0e79e53b;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    gap: 5rem;
+    text-align: center;
+    padding-left: 8rem;
+    padding-bottom: 2rem;
+
+}
+
+.transport {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(93, 254, 34, 0.438);
+
+
+}
+.bus-container h4 {
+    font-size: 20px;
+}
+
+
+.contact {
+    height: 50vh;
+    background-color: #0e79e570;
 }
