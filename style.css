@@ -976,7 +976,7 @@ td[rowspan] {
 
 
 .contact {
-    height: 50vh;
+    height: auto;
     background-color: #0e79e570;
     color: white;
 
@@ -984,7 +984,26 @@ td[rowspan] {
 .contact h3 {
     text-align: center;
     font-size: 2rem ;
-    
+    padding-bottom: 3rem;
+
+}
+
+.contact-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    padding-bottom: 2rem;
+}
+.left-contact {
+    background-color: yellow;
+    width: 50%;
+    height: 20rem;
+
 }
 
 .name-form-cont {
@@ -997,5 +1016,13 @@ td[rowspan] {
 }
 .email-input {
     display: block;
+}
+.the-map {
+    background-color: green;
+    width: 50%;
+}
+iframe {
+   height: 80%;
+   width: 100%
 }
 
